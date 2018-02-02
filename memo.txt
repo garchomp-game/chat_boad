@@ -1,0 +1,14 @@
+smarty導入のまとめ
+  まず最初にsmartyをダウンロードし、third_party直下に解凍
+  Smarty0-0-0をSmartyに変更
+  その中にある　smarty/libs　を　smarty/libraries　に変更
+  autoloadのpackagesに APPPATH.'third_party/smarty'として読み込ませておく。
+  また、librariesも同様にsmartyとして(このばあいsmarty/libraryesを読み込んでる)読み込ませる。
+
+  後に、my_controllerを定義して、views/templatesをtemplate_dirに、
+  views/templates_cをcompile_dirにする
+
+  APPPATHとはapplicationフォルダのことを指す。
+
+config,databaseの初期値の設置完了しました。
+また、smartyテンプレートの定義をマイコントローラーに追加いたしました。

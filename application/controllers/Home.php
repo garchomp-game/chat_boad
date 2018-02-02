@@ -1,17 +1,20 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Home extends CI_Controller {
+class Home extends MY_Controller {
 
   public function __construct()
   {
     parent::__construct();
-    $this->load->helper('url_helper');
   }
 
 	public function index()
 	{
-    $data["base_url"] = base_url();
-		$this->load->view('home/index', $data);
+    // タイトルとリンクの設定
+    $this->assign('title', 'Home');
+    $this->assign('junp_link', 'boad/index');
+    $this->assign('junp_name', 'トップページ');
+    // とび先を指定
+		$this->y('home/index');
 	}
 }
