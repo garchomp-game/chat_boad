@@ -12,3 +12,9 @@ smarty導入のまとめ
 
 config,databaseの初期値の設置完了しました。
 また、smartyテンプレートの定義をマイコントローラーに追加いたしました。
+
+gulpよりも強いウェブパックも勉強しておくとよい
+
+npm install -g gulp
+npm install --save-dev gulp
+npm i -D gulp-sass gulp-cssmin gulp-concat gulp-rename gulp-plumber browser-sync uglify-es -S

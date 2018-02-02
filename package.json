@@ -1,0 +1,29 @@
+{
+  "name": "chat_study",
+  "version": "1.0.0",
+  "description": "2018/02/02",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garchomp-game/chat_boad.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/garchomp-game/chat_boad/issues"
+  },
+  "homepage": "https://github.com/garchomp-game/chat_boad#readme",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "uglify-es": "^3.3.9"
+  }
+}

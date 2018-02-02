@@ -19,6 +19,7 @@ class MY_Controller extends CI_Controller
     $this->smarty->compile_dir  = APPPATH.'views/templates_c';
     $this->smarty->auto_literal = TRUE;
     $this->assign('base_url', base_url());
+    $this->load->helper('html');
   }
 
   /*----------------------------------------------------------------------------------------------------*
@@ -59,4 +60,12 @@ class MY_Controller extends CI_Controller
     $this->smarty->display("$sTemplete.tpl");
     $this->smarty->display("include/footer.tpl");
   }
+
+  public function d($data){
+    echo('<pre style="
+      font-size:24px;
+      font-weight:bold;
+    ">');var_dump($data);echo('</pre>');exit;
+  }
+
 }
