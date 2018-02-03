@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>テンプレート</title>
   {* <link rel="stylesheet" href="../css/base.css"> *}
-  {link_tag('css/base.css')}
+  {link_tag('sass_project/base.css')}
   {if !$style|default:'' == ''}
   {link_tag($style)}
   {/if}
