@@ -1,0 +1,12 @@
+/* line 1, ../sass_project/sass/home.scss */
+.main-wrapper {
+  margin: 30px 0;
+  text-align: center;
+}
+/* line 4, ../sass_project/sass/home.scss */
+.main-wrapper pre {
+  margin: 30px auto;
+  text-align: left;
+  width: 500px;
+  line-height: 2em;
+}

@@ -18,3 +18,53 @@ gulpよりも強いウェブパックも勉強しておくとよい
 npm install -g gulp
 npm install --save-dev gulp
 npm i -D gulp-sass gulp-cssmin gulp-concat gulp-rename gulp-plumber browser-sync uglify-es -S
+
+
+トップページ
+  home/index.html
+新規登録ストーリー
+  home/index.html
+  user/_form.html
+  user/_comfirm.html
+  user/_complete.html
+掲示板書き込み
+  home/index.html
+  boad/index.html
+  (以後書き込まれた後もboad/index.htmlへ。開いたらもう掲示板が表示されているような形にする)
+
+マイページ、更新
+  home/index.html
+  user/show.html
+  user/_form.html
+  user/_comfirm.html
+  user/_complete.html
+
+ユーザー一覧
+  home/index.html
+  user/index.html
+
+フォルダ構成
+home
+  index.html
+user
+  index.html
+  show.html
+  _form.html
+  _comfirm.html
+  _complete.html
+boad
+  index.html
+
+役割
+  トップページ
+    ウェルカムページを表示する。それとヘッダーには共通項目パーツとして掲示板リンクボタン、ログイン、ログアウトのボタンを設置（特に意味はないが機能実装の練習としているためいったんはこのまま実装する）
+
+  掲示板
+    掲示板の一覧を表示
+    下に投稿フォームを設置
+    掲示板とinputの幅はほぼ同一化する
+    掲示板はajax処理を実装したチャット型の掲示板を想定する。
+
+  ログイン機能
+    パーシャルでまとめる。
+    基本的にコントローラーから呼び出し、パーシャル内では引数渡っているか否かで新規登録、更新の振り分けを行う。更新の際はidをgetでわたし、ロジックでログインしているidとgetで渡ってきたidだったら更新画面で、さもなくばトップ画面に遷移しエラーフラッシュを表示

@@ -1,3 +1,4 @@
+{* include/footer.tpl *}
 <footer>
 
 </footer>

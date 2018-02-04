@@ -19,9 +19,10 @@ class MY_Controller extends CI_Controller
     $this->smarty->compile_dir  = APPPATH.'views/templates_c';
     $this->smarty->auto_literal = TRUE;
     $this->assign('base_url', base_url());
+    $this->assign('style', $this->router->fetch_class());
     $this->load->helper('html');
   }
-
+  
   /*----------------------------------------------------------------------------------------------------*
   * smarty関連
   *----------------------------------------------------------------------------------------------------*/

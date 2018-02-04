@@ -1,19 +1,29 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Boad extends MY_Controller {
+class Boad extends MY_Controller
+{
 
   public function __construct()
   {
     parent::__construct();
+    $this->load->library('BoadLogic','','boad');
   }
 
 	public function index()
 	{
-    // $data["base_url"] = base_url();
-    $this->assign('title', 'About');
+    $comments = $this->boad->getCommentAll();
     $this->assign('junp_link', 'home/index');
-    $this->assign('junp_name', 'アバウトページ');
+    $this->assign('junp_name', 'ホーム');
+    $this->assign('comments', $comments);
 		$this->y('boad/index');
 	}
+
+  public function insert()
+  {
+    $postdata = $this->input->post();
+    var_dump($postdata);exit;
+    $this->boad->insertComment();
+    redirect('/boad/index/');
+  }
 }
