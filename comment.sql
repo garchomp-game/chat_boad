@@ -1,23 +1,10 @@
--- +------------+-----------+------+-----+-------------------+----------------+
--- | Field      | Type      | Null | Key | Default           | Extra          |
--- +------------+-----------+------+-----+-------------------+----------------+
--- | id         | int(11)   | NO   | PRI | NULL              | auto_increment |
--- | comment    | text      | YES  |     | NULL              |                |
--- | user_id    | int(11)   | YES  |     | NULL              |                |
--- | created_at | timestamp | NO   |     | CURRENT_TIMESTAMP |                |
--- | updated_at | timestamp | NO   |     | CURRENT_TIMESTAMP |                |
--- +------------+-----------+------+-----+-------------------+----------------+
--- +------------+--------------+------+-----+-------------------+----------------+
--- | Field      | Type         | Null | Key | Default           | Extra          |
--- +------------+--------------+------+-----+-------------------+----------------+
--- | id         | int(11)      | NO   | PRI | NULL              | auto_increment |
--- | name       | varchar(255) | YES  |     | NULL              |                |
--- | email      | varchar(255) | YES  |     | NULL              |                |
--- | password   | varchar(255) | YES  |     | NULL              |                |
--- | created_at | timestamp    | NO   |     | CURRENT_TIMESTAMP |                |
--- | updated_at | timestamp    | NO   |     | CURRENT_TIMESTAMP |                |
--- +------------+--------------+------+-----+-------------------+----------------+
+--
 -- insert into comments (comment, user_id) values ('hi! I am garchomp', 1);
 -- insert into
---   user (name, email, password)
---   values ('garchomp', 'garchomp@gmail.com', 'garchomp_pass');
+-- user (name, email, password)
+-- values ('garchomp', 'garchomp@gmail.com', 'garchomp_pass');
+--
+-- create table cart (id int auto_increment primary key, item_id int, user_id int);
+-- create table favolite (id int auto_increment primary key, item_id int, user_id int);
+-- insert into cart (item_id,user_id) values ()
+-- insert into favolite (item_id,user_id) values ()

@@ -22,6 +22,8 @@
         {* // タイトルを設定 *}
         <h1>チャット掲示板</h1>
         <ul>
+          <li><a href="{$base_url}shop/cart">カートへ</a></li>
+          <li><a href="{$base_url}shop/index">ショップへ</a></li>
           {* // リンク先と名前をassingから引っ張ってくる。これによりすっきり書けるようになった。 *}
           <li><a href="{$base_url}/home/index">ホームへ</a></li>
           {if $login_id}

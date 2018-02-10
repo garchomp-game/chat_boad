@@ -1,0 +1,29 @@
+comments table
++------------+-----------+------+-----+-------------------+----------------+
+| Field      | Type      | Null | Key | Default           | Extra          |
++------------+-----------+------+-----+-------------------+----------------+
+| id         | int(11)   | NO   | PRI | NULL              | auto_increment |
+| comment    | text      | YES  |     | NULL              |                |
+| user_id    | int(11)   | YES  |     | NULL              |                |
+| created_at | timestamp | NO   |     | CURRENT_TIMESTAMP |                |
+| updated_at | timestamp | NO   |     | CURRENT_TIMESTAMP |                |
++------------+-----------+------+-----+-------------------+----------------+
+user dable
++------------+--------------+------+-----+-------------------+----------------+
+| Field      | Type         | Null | Key | Default           | Extra          |
++------------+--------------+------+-----+-------------------+----------------+
+| id         | int(11)      | NO   | PRI | NULL              | auto_increment |
+| name       | varchar(255) | YES  |     | NULL              |                |
+| email      | varchar(255) | YES  |     | NULL              |                |
+| password   | varchar(255) | YES  |     | NULL              |                |
+| created_at | timestamp    | NO   |     | CURRENT_TIMESTAMP |                |
+| updated_at | timestamp    | NO   |     | CURRENT_TIMESTAMP |                |
++------------+--------------+------+-----+-------------------+----------------+
+favolite table & cart table
++---------+---------+------+-----+---------+----------------+
+| Field   | Type    | Null | Key | Default | Extra          |
++---------+---------+------+-----+---------+----------------+
+| id      | int(11) | NO   | PRI | NULL    | auto_increment |
+| item_id | int(11) | YES  |     | NULL    |                |
+| user_id | int(11) | YES  |     | NULL    |                |
++---------+---------+------+-----+---------+----------------+

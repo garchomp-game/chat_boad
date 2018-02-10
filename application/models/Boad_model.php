@@ -31,7 +31,7 @@ class Boad_model extends CI_Model {
   public function insertComment($postdata)
   {
     $data = array(
-      'name' => $postdata['name'],
+      'user_id' => $postdata['id'],
       'comment' => $postdata['comment']
     );
     $this->db->insert('comments', $data);
