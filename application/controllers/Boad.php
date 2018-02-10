@@ -18,17 +18,15 @@ class Boad extends MY_Controller
 
 	public function index()
 	{
-		$this->y('boad/index');exit
+		$this->y('boad/index');
 	}
 
   public function insert()
   {
     $postdata = $this->input->post();
-    // var_dump($postdata);exit;
     // postdataは受け取れている
-    if ($this->form_validation->run('signup'))
+    if ($this->form_validation->run('chat_insert'))
     {
-      var_dump(validation_errors());exit;
       $this->boad->insertComment($postdata);
       $this->y('/boad/index/');
     }

@@ -14,6 +14,7 @@ class MY_Controller extends CI_Controller
   function __construct()
   {
     parent::__construct();
+    $this->load->library('session');
     $this->load->helper('url');
     $this->smarty->template_dir = APPPATH.'views/templates';
     $this->smarty->compile_dir  = APPPATH.'views/templates_c';
@@ -21,8 +22,9 @@ class MY_Controller extends CI_Controller
     $this->assign('base_url', base_url());
     $this->assign('style', $this->router->fetch_class());
     $this->load->helper('html');
+    $this->assign('login_id', $this->session->userdata('login_id'));
   }
-  
+
   /*----------------------------------------------------------------------------------------------------*
   * smarty関連
   *----------------------------------------------------------------------------------------------------*/

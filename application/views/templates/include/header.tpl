@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>テンプレート</title>
   {* <link rel="stylesheet" href="../css/base.css"> *}
-  {link_tag('css/base.css')}
+  {link_tag("css/base.css")}
   {if !$style|default:'' == ''}
   {link_tag("css/`$style`.css")}
   {/if}
@@ -23,7 +23,13 @@
         <h1>チャット掲示板</h1>
         <ul>
           {* // リンク先と名前をassingから引っ張ってくる。これによりすっきり書けるようになった。 *}
-          <li><a href="{$base_url}{$junp_link}">{$junp_name}へ</a></li>
+          <li><a href="{$base_url}/home/index">ホームへ</a></li>
+          {if $login_id}
+          <li><a href="{$base_url}boad/index">掲示板へ</a></li>
+          <li><a href="{$base_url}login/logout_form">ログアウト</a></li>
+          {else}
+          <li><a href="{$base_url}login/login_form">ログイン</a></li>
+          {/if}
         </ul>
       </div>
     </div>

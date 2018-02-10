@@ -16,5 +16,4 @@ class BoadLogic
   {
     return $this->CI->boad_model->insertComment($postdata);
   }
-
 }
