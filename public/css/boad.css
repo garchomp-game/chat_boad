@@ -1,0 +1,33 @@
+/* line 4, ../sass_project/sass/boad.scss */
+.boad-wrapper .boad-content ul li {
+  margin: 15px 0;
+  box-sizing: border-box;
+  float: left;
+  border: 1px solid gray;
+  padding: 10px 0;
+}
+/* line 11, ../sass_project/sass/boad.scss */
+.boad-wrapper .boad-content ul .user-name {
+  width: 100px;
+  text-align: center;
+}
+/* line 16, ../sass_project/sass/boad.scss */
+.boad-wrapper .boad-content ul .comment {
+  border-left: none;
+  padding-left: 20px;
+  width: calc(1170px - 100px);
+}
+
+/* line 27, ../sass_project/sass/boad.scss */
+form {
+  position: absolute;
+  bottom: 20px;
+  width: 1170px;
+  margin: 0 auto;
+}
+/* line 32, ../sass_project/sass/boad.scss */
+form input, form textarea {
+  width: 100%;
+  display: block;
+  margin: 10px auto;
+}

@@ -1,0 +1,37 @@
+.boad-wrapper{
+    .boad-content{
+        ul{
+            li{
+                margin:15px 0;
+                box-sizing:border-box;
+                float:left;
+                border:1px solid gray;
+                padding:10px 0;
+            }
+            .user-name{
+                width:100px;
+                text-align:center;
+                // background-color:pink;
+            }
+            .comment{
+                border-left:none;
+                padding-left:20px;
+                width:calc(1170px - 100px);
+                // background-color:aqua;
+            }
+        }
+    }
+}
+
+
+form{
+    position:absolute;
+    bottom:20px;
+    width:1170px;
+    margin:0 auto;
+    input, textarea{
+        width:100%;
+        display:block;
+        margin:10px auto;
+    }
+}

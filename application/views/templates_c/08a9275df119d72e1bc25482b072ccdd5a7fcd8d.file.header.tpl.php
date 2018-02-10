@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.8, created on 2018-02-04 22:25:40
+<?php /* Smarty version Smarty-3.1.8, created on 2018-02-10 13:23:35
          compiled from "/home/garchomp/chat_study/application/views/templates/include/header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:15062878775a75d3b19f12a7-38135469%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '08a9275df119d72e1bc25482b072ccdd5a7fcd8d' => 
     array (
       0 => '/home/garchomp/chat_study/application/views/templates/include/header.tpl',
-      1 => 1517747165,
+      1 => 1518234713,
       2 => 'file',
     ),
   ),
@@ -39,6 +39,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   <?php echo link_tag("css/".($_smarty_tpl->tpl_vars['style']->value).".css");?>
 
   <?php }?>
+  <script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
   <script src="../js/base.js" charset="utf-8"></script>
 </head>
 <body>

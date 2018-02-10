@@ -9,6 +9,10 @@
   {if !$style|default:'' == ''}
   {link_tag("css/`$style`.css")}
   {/if}
+  <script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
   <script src="../js/base.js" charset="utf-8"></script>
 </head>
 <body>
