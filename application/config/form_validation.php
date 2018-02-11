@@ -6,5 +6,5 @@ $config = array(
             'label' => 'コメント',
             'rules' => 'required|max_length[200]'
         )
-    )
+    ),
 );

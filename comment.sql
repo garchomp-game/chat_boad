@@ -4,7 +4,7 @@
 -- user (name, email, password)
 -- values ('garchomp', 'garchomp@gmail.com', 'garchomp_pass');
 --
--- create table cart (id int auto_increment primary key, item_id int, user_id int);
+-- create table cart (id int auto_increment primary key, item_id varchar(255), user_id int);
 -- create table favolite (id int auto_increment primary key, item_id int, user_id int);
 -- insert into cart (item_id,user_id) values ()
 -- insert into favolite (item_id,user_id) values ()

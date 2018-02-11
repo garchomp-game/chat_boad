@@ -20,7 +20,7 @@
     <div class="container">
       <div class="container">
         {* // タイトルを設定 *}
-        <h1>チャット掲示板</h1>
+        <h1>{$title|default:''}</h1>
         <ul>
           <li><a href="{$base_url}shop/cart">カートへ</a></li>
           <li><a href="{$base_url}shop/index">ショップへ</a></li>

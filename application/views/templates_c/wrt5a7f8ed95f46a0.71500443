@@ -1,0 +1,38 @@
+<?php /* Smarty version Smarty-3.1.8, created on 2018-02-11 09:31:21
+         compiled from "C:\xampp\htdocs\chat_study\application\views/templates\shop\index.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:3811167535a7f1fadaa1af8-16983818%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '2f2a598043481b1ba285aa1de5c2efe69c9e2fab' => 
+    array (
+      0 => 'C:\\xampp\\htdocs\\chat_study\\application\\views/templates\\shop\\index.tpl',
+      1 => 1518309080,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '3811167535a7f1fadaa1af8-16983818',
+  'function' => 
+  array (
+  ),
+  'version' => 'Smarty-3.1.8',
+  'unifunc' => 'content_5a7f1fadac1303_61242364',
+  'has_nocache_code' => false,
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_5a7f1fadac1303_61242364')) {function content_5a7f1fadac1303_61242364($_smarty_tpl) {?><h1>ショップ</h1>
+<script>
+/**
+ * データの加工をする関数
+ */
+function calculateRate(data) { //APIのレスポンスが渡される
+  data.additional = "追加情報";
+  return data; //ここで返すデータが、本来のAPIレスポンスの代わりに利用される
+}
+</script>
+
+<script src="https://s.yimg.jp/images/yjdn/js/bakusoku-jsonp-v1.js"
+  data-url="http://setsuden.yahooapis.jp/v1/Setsuden/latestPowerUsage"
+  data-p-appid="APPLICATION_ID"
+  data-p-output="json"
+  data-filter="calculateRate"></script>
+<?php }} ?>
