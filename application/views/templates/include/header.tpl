@@ -22,7 +22,7 @@
         {* // タイトルを設定 *}
         <h1>{$title|default:''}</h1>
         <ul>
-          <li><a href="{$base_url}shop/cart">カートへ</a></li>
+          <li><a href="{$base_url}cart/show">カートへ</a></li>
           <li><a href="{$base_url}shop/index">ショップへ</a></li>
           {* // リンク先と名前をassingから引っ張ってくる。これによりすっきり書けるようになった。 *}
           <li><a href="{$base_url}/home/index">ホームへ</a></li>

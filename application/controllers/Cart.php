@@ -19,4 +19,19 @@ class Cart extends MY_Controller
     }
     redirect('shop/index');
   }
+
+  public function show()
+  {
+    $data = $this->cart_model->getAllItem($this->session->userdata('login_id'));
+    $this->assign('cart', $this->cartlogic->getApi($data));
+    $this->y('cart/show');
+  }
+
+  public function complete()
+  {
+    if ($this->cart_model->getAll($this->session->userdata('login_id'))) {
+      $this->cartlogic->complete($this->session->userdata('login_id'));
+    }
+    redirect('shop/index');
+  }
 }

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.8, created on 2018-02-11 14:36:01
+<?php /* Smarty version Smarty-3.1.8, created on 2018-02-11 22:57:40
          compiled from "C:\xampp\htdocs\chat_study\application\views/templates\include\header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:12392435125a73d3622cbc41-98801909%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'ee3d711f0e8d1ab92d31f1cc5a7e8f42babc952c' => 
     array (
       0 => 'C:\\xampp\\htdocs\\chat_study\\application\\views/templates\\include\\header.tpl',
-      1 => 1518327291,
+      1 => 1518357458,
       2 => 'file',
     ),
   ),
@@ -54,7 +54,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 </h1>
         <ul>
           <li><a href="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
-shop/cart">カートへ</a></li>
+cart/show">カートへ</a></li>
           <li><a href="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
 shop/index">ショップへ</a></li>
           

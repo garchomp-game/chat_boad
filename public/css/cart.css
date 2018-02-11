@@ -1,0 +1,17 @@
+/* line 2, ../sass_project/sass/cart.scss */
+.cart-wrapper h1 {
+  text-align: center;
+}
+/* line 5, ../sass_project/sass/cart.scss */
+.cart-wrapper li {
+  margin-bottom: 30px;
+}
+/* line 8, ../sass_project/sass/cart.scss */
+.cart-wrapper form {
+  text-align: center;
+}
+/* line 10, ../sass_project/sass/cart.scss */
+.cart-wrapper form input[type='submit'] {
+  margin: 30px auto;
+  font-size: 24px;
+}

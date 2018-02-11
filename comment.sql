@@ -6,5 +6,6 @@
 --
 -- create table cart (id int auto_increment primary key, item_id varchar(255), user_id int);
 -- create table favolite (id int auto_increment primary key, item_id int, user_id int);
+-- create table buy_item (id int auto_increment primary key, login_id int, item_id varchar(255));
 -- insert into cart (item_id,user_id) values ()
 -- insert into favolite (item_id,user_id) values ()

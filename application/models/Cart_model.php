@@ -24,7 +24,32 @@ class Cart_model extends CI_Model {
   }
 
   /**
-  * カートに商品を追加するためのメソッド
+  * カートにある商品のidをすべて取得するためのメソッド
+  *
+  * @return void
+  */
+  public function getAllItem($id)
+  {
+    $this->db->select('item_id')
+    ->where('user_id', $id);
+    $data = $this->db->get('cart');
+    return $data->result_array();
+  }
+
+  /**
+  * 全要素を取得
+  *
+  * @return void
+  */
+  public function getAll($id)
+  {
+    $this->db->where('user_id', $id);
+    $data = $this->db->get('cart');
+    return $data->result_array();
+  }
+
+  /**
+  * 一つだけ商品を取得するためのメソッド
   *
   * @return void
   */
@@ -35,4 +60,18 @@ class Cart_model extends CI_Model {
     $data = $this->db->get('cart');
     return $data->result_array() ? false : true ;
   }
+
+  /**
+  * 一つだけ商品を取得するためのメソッド
+  *
+  * @return void テーブルの削除
+  */
+  public function destroy($user_id)
+  {
+    $this->db->where('user_id', $user_id);
+    $data = $this->db->delete('cart');
+    return true;
+  }
+
+
 }
