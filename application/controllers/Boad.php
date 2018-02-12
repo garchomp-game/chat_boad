@@ -10,11 +10,13 @@ class Boad extends MY_Controller
     $this->assign('style','boad');
     $comments = $this->boad->getCommentAll();
     $this->assign('comments', $comments);
+    $this->load->library('form_validation');
     $this->assign('title', 'チャット掲示板');
   }
 
   public function index()
   {
+    $this->redirect_login('boad/index');
     $this->y('boad/index');
   }
 
@@ -22,9 +24,10 @@ class Boad extends MY_Controller
   {
     $postdata = $this->input->post();
     // postdataは受け取れている
-    if ($this->form_validation->run('chat_insert') && $_SERVER['REQUEST_METHOD']==='POST') {
+    if ($this->form_validation->run('chat_insert')) {
       $this->boad->insertComment($postdata);
     }
-    redirect('boad/index');
+    $this->y('boad/index');
   }
 }
+ // && $_SERVER['REQUEST_METHOD']==='POST'

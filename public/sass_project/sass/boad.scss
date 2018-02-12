@@ -23,6 +23,10 @@ form{
   bottom:20px;
   width:1170px;
   margin:0 auto;
+  p{
+    font-weight:bold;
+    color:red;
+  }
   input, textarea{
     width:100%;
     display:block;

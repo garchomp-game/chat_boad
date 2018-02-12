@@ -53,6 +53,19 @@ class MY_Controller extends CI_Controller
   }
 
   /**
+  * ログインしていなかったらloginページにリダイレクト
+  *
+  * @param string テンプレートのファイル名
+  * @return void
+  */
+  public function redirect_login($pass)
+  {
+    if (!($this->session->userdata('login_id'))) {
+      redirect("login/login_form?pass=$pass");
+    }
+  }
+
+  /**
   * 松谷拓海定義
   *
   * テンプレート呼び出し

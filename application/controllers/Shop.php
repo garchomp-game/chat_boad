@@ -21,6 +21,7 @@ class Shop extends MY_Controller
   public function show()
   {
     $getdata = $this->input->get();
+    $this->redirect_login("shop/show&id={$getdata['id']}");
     $this->assign('itemdata', $this->shoplogic->getItem($getdata['id']));
     $this->y('shop/show');
   }

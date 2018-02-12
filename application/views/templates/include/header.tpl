@@ -22,15 +22,16 @@
         {* // タイトルを設定 *}
         <h1>{$title|default:''}</h1>
         <ul>
-          <li><a href="{$base_url}cart/show">カートへ</a></li>
           <li><a href="{$base_url}shop/index">ショップへ</a></li>
           {* // リンク先と名前をassingから引っ張ってくる。これによりすっきり書けるようになった。 *}
           <li><a href="{$base_url}/home/index">ホームへ</a></li>
           {if $login_id}
+          <li><a href="{$base_url}cart/show">カートへ</a></li>
           <li><a href="{$base_url}boad/index">掲示板へ</a></li>
           <li><a href="{$base_url}login/logout_form">ログアウト</a></li>
           {else}
           <li><a href="{$base_url}login/login_form">ログイン</a></li>
+          <li><a href="{$base_url}login/new">新規アカウント作成</a></li>
           {/if}
         </ul>
       </div>

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.8, created on 2018-02-11 01:33:15
+<?php /* Smarty version Smarty-3.1.8, created on 2018-02-12 12:26:09
          compiled from "C:\xampp\htdocs\chat_study\application\views/templates\boad\index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:19048696725a73d0b18e0689-60400891%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '8c404eecae53381f8f6ef34737b5627ebbab6750' => 
     array (
       0 => 'C:\\xampp\\htdocs\\chat_study\\application\\views/templates\\boad\\index.tpl',
-      1 => 1518280394,
+      1 => 1518405944,
       2 => 'file',
     ),
   ),
@@ -44,6 +44,8 @@ $_smarty_tpl->tpl_vars['item']->_loop = true;
       </ul>
     </div>
     <form class="" action="insert" method="post">
+      <p'><?php echo validation_errors();?>
+</p>
       <input type="hidden" name="id" value="<?php echo (($tmp = @$_smarty_tpl->tpl_vars['login_id']->value)===null||$tmp==='' ? '' : $tmp);?>
 ">
       <textarea name="comment" rows="6" cols="80"></textarea>

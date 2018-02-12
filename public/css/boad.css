@@ -20,6 +20,11 @@ form {
   margin: 0 auto;
 }
 /* line 26, ../sass_project/sass/boad.scss */
+form p {
+  font-weight: bold;
+  color: red;
+}
+/* line 30, ../sass_project/sass/boad.scss */
 form input, form textarea {
   width: 100%;
   display: block;

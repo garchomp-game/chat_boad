@@ -3,6 +3,11 @@ form {
   margin-top: 60px;
 }
 /* line 3, ../sass_project/sass/login.scss */
+form p {
+  color: red;
+  font-weight: bold;
+}
+/* line 7, ../sass_project/sass/login.scss */
 form input {
   margin: 15px auto;
   display: block;

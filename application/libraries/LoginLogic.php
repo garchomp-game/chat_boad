@@ -1,5 +1,5 @@
 <?php
-class LoginLogic
+class BoadLogic
 {
   public function __construct()
   {

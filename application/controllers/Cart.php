@@ -2,7 +2,6 @@
 
 class Cart extends MY_Controller
 {
-
   public function __construct()
   {
     parent::__construct();
@@ -13,6 +12,7 @@ class Cart extends MY_Controller
 
   public function insert()
   {
+    $this->redirect_login('shop/index');
     $getdata = $this->input->post();
     if ($this->cart_model->get_single($getdata)) {
       $this->cart_model->insert($getdata);
@@ -22,6 +22,7 @@ class Cart extends MY_Controller
 
   public function show()
   {
+    $this->redirect_login('cart/show');
     $data = $this->cart_model->getAllItem($this->session->userdata('login_id'));
     $this->assign('cart', $this->cartlogic->getApi($data));
     $this->y('cart/show');
