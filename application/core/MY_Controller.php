@@ -17,7 +17,6 @@ class MY_Controller extends CI_Controller
     $this->load->library('session');
     $this->load->model('user_model');
     $this->load->helper('url');
-    $this->load->library('BoadLogic','','boad');
     $this->load->library('form_validation');
     $this->smarty->template_dir = APPPATH.'views/templates';
     $this->smarty->compile_dir  = APPPATH.'views/templates_c';
@@ -74,7 +73,7 @@ class MY_Controller extends CI_Controller
   */
 
   public function y($sTemplete)
-  {
+   {
     $this->smarty->display("include/header.tpl");
     $this->smarty->display("$sTemplete.tpl");
     $this->smarty->display("include/footer.tpl");

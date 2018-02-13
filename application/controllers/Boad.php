@@ -8,26 +8,37 @@ class Boad extends MY_Controller
   {
     parent::__construct();
     $this->assign('style','boad');
-    $comments = $this->boad->getCommentAll();
-    $this->assign('comments', $comments);
+    $this->load->model('boad_model');
+    $this->load->library('BoadLogic','','boad');
     $this->load->library('form_validation');
     $this->assign('title', 'チャット掲示板');
+    $comments = $this->boad_model->getComments();
+    $this->assign('comments', $comments);
   }
 
   public function index()
   {
     $this->redirect_login('boad/index');
+    $this->assign('errors', $this->session->flashdata('error'));
     $this->y('boad/index');
   }
 
   public function insert()
   {
+    $this->redirect_login('boad/index');
     $postdata = $this->input->post();
     // postdataは受け取れている
-    if ($this->form_validation->run('chat_insert')) {
-      $this->boad->insertComment($postdata);
+    if ($this->form_validation->run('chat_insert') && $_SERVER['REQUEST_METHOD']==='POST') {
+      $this->boad_model->insertComment($postdata);
     }
-    $this->y('boad/index');
+    $this->session->set_flashdata('error', validation_errors());
+    redirect('boad/index');
+  }
+
+  public function favolite()
+  {
+    $data = $this->input->get();
+    $this->boad->favolite($data['id'], $this->session->userdata('login_id'));
+    redirect('boad/index');
   }
 }
- // && $_SERVER['REQUEST_METHOD']==='POST'

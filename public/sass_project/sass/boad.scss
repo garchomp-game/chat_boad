@@ -1,9 +1,18 @@
 .boad-wrapper{
   .boad-content{
     ul{
+      height:calc(100vh - 120px - 180px);
       padding-top:30px;
+      overflow-y: scroll;
       li{
         box-sizing:border-box;
+        .favolite{
+          color:black;
+          text-decoration: none;
+        }
+        .on{
+          color:red;
+        }
       }
       .user-name{
         // background-color:pink;
@@ -16,11 +25,8 @@
     }
   }
 }
-
-
 form{
-  position:absolute;
-  bottom:20px;
+  height:150px;
   width:1170px;
   margin:0 auto;
   p{

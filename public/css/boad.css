@@ -1,30 +1,40 @@
 /* line 3, ../sass_project/sass/boad.scss */
 .boad-wrapper .boad-content ul {
+  height: calc(100vh - 120px - 180px);
   padding-top: 30px;
+  overflow-y: scroll;
 }
-/* line 5, ../sass_project/sass/boad.scss */
+/* line 7, ../sass_project/sass/boad.scss */
 .boad-wrapper .boad-content ul li {
   box-sizing: border-box;
 }
-/* line 11, ../sass_project/sass/boad.scss */
+/* line 9, ../sass_project/sass/boad.scss */
+.boad-wrapper .boad-content ul li .favolite {
+  color: black;
+  text-decoration: none;
+}
+/* line 13, ../sass_project/sass/boad.scss */
+.boad-wrapper .boad-content ul li .on {
+  color: red;
+}
+/* line 20, ../sass_project/sass/boad.scss */
 .boad-wrapper .boad-content ul .comment {
   border-bottom: 1px solid gray;
   padding: 0 0 10px;
 }
 
-/* line 21, ../sass_project/sass/boad.scss */
+/* line 28, ../sass_project/sass/boad.scss */
 form {
-  position: absolute;
-  bottom: 20px;
+  height: 150px;
   width: 1170px;
   margin: 0 auto;
 }
-/* line 26, ../sass_project/sass/boad.scss */
+/* line 32, ../sass_project/sass/boad.scss */
 form p {
   font-weight: bold;
   color: red;
 }
-/* line 30, ../sass_project/sass/boad.scss */
+/* line 36, ../sass_project/sass/boad.scss */
 form input, form textarea {
   width: 100%;
   display: block;

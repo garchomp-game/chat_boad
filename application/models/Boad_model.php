@@ -17,9 +17,14 @@ class Boad_model extends CI_Model {
   {
     $query = $this->db->select('name')
     ->select('comment')
+    ->select('comment_id')
+    ->select('comment_id')
     ->from('comments')
     ->join('user', 'comments.user_id = user.id')
+    ->join('favolite', 'comments.comment_id = favolite.comment_id', 'left')
+    ->order_by('comments.created_at', 'DESC')
     ->get();
+    // var_dump($query->result_array());exit;
     return $query->result_array();
   }
 
@@ -32,7 +37,12 @@ class Boad_model extends CI_Model {
   {
     $data = array(
       'user_id' => $postdata['id'],
-      'comment' => $postdata['comment']
+      'comment' => $postdata['comment'],
+      'comment_id' => substr(str_shuffle(
+        '1234567890abcdefghijklmnopqrstuvwxyz!?ABCDEFGHIJKLMNOPQRSTUVWXYZ*#$%&'),
+        0,
+        50
+       )
     );
     $this->db->insert('comments', $data);
   }
